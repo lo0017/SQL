@@ -21,3 +21,6 @@ GROUP BY county_tier;
 SELECT COUNT(DISTINCT company) AS llc_companies
 FROM ecd
 WHERE company ILIKE '%LLC%';
+
+SELECT * FROM population
+INNER JOIN	ecd USING(county);
